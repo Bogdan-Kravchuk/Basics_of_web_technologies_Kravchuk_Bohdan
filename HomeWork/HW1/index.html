@@ -29,34 +29,86 @@
               required
             />
             <!--button-->
-            <button type="submit" class="add_product_button">Додати</button>
+            <button
+              type="submit"
+              class="add_product_button tooltip"
+              data-tooltips="Додати"
+            >
+              Додати
+            </button>
           </form>
 
           <!-- article product list-->
           <article class="product-list">
             <!--first product -->
             <article class="not-bought-product">
-              <span>Помідори</span>
-              <input type="number" min="1" max="100" value="2" required />
-              <span>Не куплено</span>
+              <span class="product-name crossed-out-text">Помідори</span>
+              <input
+                class="amount-of-product"
+                type="number"
+                min="1"
+                max="100"
+                value="2"
+                required
+              />
+              <span class="status">Не куплено</span>
             </article>
             <!--secord product -->
             <article class="bought-product">
-              <span>Печиво</span>
-              <button>+</button>
-              <input type="number" min="1" max="100" value="2" required />
-              <button>-</button>
-              <span>Куплено</span>
-              <button type="button"><span>&#10006;</span></button>
+              <span class="product-name">Печиво</span>
+              <button class="minus-button tooltip" data-tooltips="Зменшити">
+                -
+              </button>
+              <input
+                class="amount-of-product"
+                type="number"
+                min="1"
+                max="100"
+                value="2"
+                required
+              />
+              <button class="plus-button tooltip" data-tooltips="Збільшити">
+                +
+              </button>
+              <span class="status">Куплено</span>
+              <button
+                class="cancel-button tooltip"
+                type="button"
+                data-tooltips="Видалити"
+              >
+                <span>&#10006;</span>
+              </button>
             </article>
             <!--third product -->
             <article class="bought-product">
-              <span>Сир</span>
-              <button>+</button>
-              <input type="number" min="1" max="100" value="1" required />
-              <button>-</button>
-              <span>Куплено</span>
-              <button type="button"><span>&#10006;</span></button>
+              <span class="product-name">Сир</span>
+
+              <button
+                class="minus-button tooltip"
+                data-tooltips="Зменшити"
+                disabled
+              >
+                -
+              </button>
+              <input
+                class="amount-of-product"
+                type="number"
+                min="1"
+                max="100"
+                value="1"
+                required
+              />
+              <button class="plus-button tooltip" data-tooltips="Збільшити">
+                +
+              </button>
+              <span class="status">Куплено</span>
+              <button
+                class="cancel-button tooltip"
+                type="button"
+                data-tooltips="Видалити"
+              >
+                <span>&#10006;</span>
+              </button>
             </article>
           </article>
         </div>
@@ -64,7 +116,7 @@
         <!-- Status purchase-->
         <article class="status-purchase">
           <article class="remained">
-            <h3>Залишилося</h3>
+            <h3 class="remainder-h3">Залишилося</h3>
             <span class="product-item">
               Печиво
               <span class="amount">2</span>
@@ -74,9 +126,9 @@
               <span class="amount">1</span>
             </span>
           </article>
-          <article class="purchased">
-            <h3>Куплено</h3>
-            <span class="product-item">
+          <article>
+            <h3 class="purchased-h3">Куплено</h3>
+            <span class="product-item crossed-out-text">
               Помідори
               <span class="amount">1</span>
             </span>
@@ -84,5 +136,11 @@
         </article>
       </div>
     </main>
+    <!-- Badge-->
+    <div class="badge">
+      <h2 class="title-of-badge">Buy List</h2>
+      <p class="created-by">Created by:</p>
+      <h3 class="author">Bohdan Kravchuk</h3>
+    </div>
   </body>
 </html>
