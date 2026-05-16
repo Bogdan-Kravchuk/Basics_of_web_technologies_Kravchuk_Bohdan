@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+  <head lang="uk">
+    <meta charset="UTF-8" />
+    <title>Buy List</title>
+
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+  <body>
+    <main>
+      <!--Headline-->
+      <h1>Список продуктів</h1>
+      <!--content without headline -->
+      <div class="content-without-headline">
+        <!--search input with product list -->
+        <div class="search-with-product-list">
+          <!--input form -->
+          <form class="search" action="/add">
+            <!--label-->
+            <label for="add_product">Введіть назву товару</label>
+            <!--input-->
+            <input
+              class="input_field"
+              type="text"
+              id="add_product"
+              name="add_product"
+              placeholder="Назва товару"
+              maxlength="50"
+              required
+            />
+            <!--button-->
+            <button type="submit" class="add_product_button">Додати</button>
+          </form>
+
+          <!-- article product list-->
+          <article class="product-list">
+            <!--first product -->
+            <article class="not-bought-product">
+              <span>Помідори</span>
+              <input type="number" min="1" max="100" value="2" required />
+              <span>Не куплено</span>
+            </article>
+            <!--secord product -->
+            <article class="bought-product">
+              <span>Печиво</span>
+              <button>+</button>
+              <input type="number" min="1" max="100" value="2" required />
+              <button>-</button>
+              <span>Куплено</span>
+              <button type="button"><span>&#10006;</span></button>
+            </article>
+            <!--third product -->
+            <article class="bought-product">
+              <span>Сир</span>
+              <button>+</button>
+              <input type="number" min="1" max="100" value="1" required />
+              <button>-</button>
+              <span>Куплено</span>
+              <button type="button"><span>&#10006;</span></button>
+            </article>
+          </article>
+        </div>
+
+        <!-- Status purchase-->
+        <article class="status-purchase">
+          <article class="remained">
+            <h3>Залишилося</h3>
+            <span class="product-item">
+              Печиво
+              <span class="amount">2</span>
+            </span>
+            <span class="product-item">
+              Сир
+              <span class="amount">1</span>
+            </span>
+          </article>
+          <article class="purchased">
+            <h3>Куплено</h3>
+            <span class="product-item">
+              Помідори
+              <span class="amount">1</span>
+            </span>
+          </article>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>
