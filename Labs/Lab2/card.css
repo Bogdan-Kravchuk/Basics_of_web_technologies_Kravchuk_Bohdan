@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+:root{
+--accent: 100px;
+--text: 100px; 
+--radius: 30px; 
+--space: 3px; 
+--card_width: 400px;
+--card_hright: 500px; 
+--card_color: #FFD67F;
+--color_page: #FFFFFF;
+-color_button_find_more: #000000;
+--black: #000000;
+}
+
+body {
+    background-color: var(--color_page);
+}
+
+.card{
+width: var(--card_width);
+height: var(--card_hright);
+border-radius: var(--radius);
+background-color: var(--card_color);
+flex-direction: column;
+margin-top: auto;
+padding: 20px;
+}
+
+.card-image {
+    max-width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+
+.card-action{
+  background-color: var(--color_button_find_more);
+  position: absolute;
+border: 5px solid var(--black);
+position: sticky;
+}
+button:hoover{
+    border-radius: 30%;
+    border: 20px;
+border-color: var(--black);
+margin-top: auto;
+}; 
+
+.card-meta{
+margin: 0 auto;
+}
+.card-price{
+margin: 0 auto;
+}
+
+button:focus-visible {
+outline: auto;
+}
+
+button:transition{
+
+
+}
+
+
+
+
+
