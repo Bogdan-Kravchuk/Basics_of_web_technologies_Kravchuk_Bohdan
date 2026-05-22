@@ -258,7 +258,7 @@ label {
 /* adaptability*/
 @media (max-width: 650px) {
   .content-without-headline {
-    flex-direction: column; /* Стають одна під одною */
+    flex-direction: column;
     align-items: center;
     gap: 30px;
   }
