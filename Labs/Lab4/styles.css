@@ -1,0 +1,56 @@
+body {
+  font-family: -apple-system, sans-serif;
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 1rem;
+  line-height: 1.5;
+}
+h1 {
+  color: #2050a0;
+}
+#search {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.1rem;
+  border: 1px solid #ccd;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+#results-count {
+  color: #555;
+  margin-bottom: 1rem;
+}
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+.card {
+  background: #f6f8fa;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  padding: 1rem;
+}
+.card h3 {
+  margin: 0 0 0.5rem;
+  color: #2050a0;
+}
+.card p {
+  margin: 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+.card.hidden {
+  display: none;
+}
+mark {
+  background: #ffe066;
+}
+#no-results {
+  padding: 2rem;
+  text-align: center;
+  color: #888;
+}
+#no-results.hidden {
+  display: none;
+}
